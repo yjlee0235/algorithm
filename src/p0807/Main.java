@@ -10,7 +10,7 @@ public class Main {
         if(n < r) {
             return 0;
         }
-        if (n == 1 || r == 0) {
+        if (n == r || r == 0) {
             return 1;
         }
         int left = (memo[n - 1][r - 1] != 0) ? memo[n - 1][r - 1] : dfs(n - 1, r - 1);
